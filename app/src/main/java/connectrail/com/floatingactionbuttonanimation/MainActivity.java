@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        fab = findViewById(R.id.fab);
         fab1 = findViewById(R.id.fab_1);
         fab2 = findViewById(R.id.fab_2);
         fab3 = findViewById(R.id.fab_3);
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 expandFAB();
                 FAB_Status = true;
             } else {
-               
+
                 //Close FAB menu
                 hideFAB();
                 FAB_Status = false;
